@@ -1,0 +1,126 @@
+extends _layouts/base
+
+
+include ./_modules/button/button
+include ./_modules/icon/icon
+include ./_modules/link/link
+
+
+block config 
+    - var page = 'homepage'
+    - var site = htmlWebpackPlugin.options //global site data
+    - var title = 'Главная'
+    - var description = 'Главная страница сайта'
+
+block content
+    .header
+        .header__box
+            .header__logo
+                img.logo(src="/assets/images/logo.png")
+            .header__content +7 903 123-45-67
+    .block-main
+        .block-main__box
+            h1.title.title_line.title_light Технология продаж, которую используют во всем мире, теперь в России
+            p Это то, что меняет рынок недвижимости.
+            p А ты готов к переменам?
+            +link({
+              __class: "link1",
+              __mixin: "",
+              text: "Читать далее",
+              link: "https://yandex.ru/",
+              name: "#arrow-right",
+              width: '1em',
+              height: '1em',
+            })
+
+    .block-second
+        .block-second__box
+            h2.block-second__title Наша технология применима во всех сферах недвижимости и позволяет:
+            .block-second__list
+                .block-second__item
+                    .article
+                        h3.article__title Эффективность
+                        .article__content Повысить привлекательность любого объекта недвижимости на 30%. Мы умеем правильно презентовать объект.
+                .block-second__item
+                    .article
+                        h3.article__title Результат
+                        .article__content Получить конечный результат в разумные сроки. Для этого нам необходимо 1,5-2 месяца. Вы не теряете время в пустую.
+                .block-second__item
+                    .article
+                        h3.article__title Реальная стоимость
+                        .article__content Узнать реальную на 99% стоимость объекта с развёрнутым детальным анализом, и гарантией результата.
+                .block-second__item
+                    .article
+                        h3.article__title Выгода
+                        .article__content Продать объект выгоднее на реальных 3-5% от стоимости, что покроет расходы на риэлтора и рекламу.
+
+    .services
+        .services__box
+            .services__title
+                h2.title.title_line Услуги
+            .services__list
+                .services__item
+                    .services__item-box
+                        h3.services__item-title Юридическое сопровождение
+                        .services__content
+                            ul
+                                li Юридические и адвокатские услуги для юридических и физических лиц
+                                li Полная проверка юридической чистоты деятельности компании, действующего бизнеса, производства перед покупкой или продажей.
+                                li Создание необходимой юридической базы документов.
+                                li Закрытие исковых дел, представление интересов в суде.
+                                li Составление исковых обращений и проведение судебных слушаний.
+                .services__item
+                    .services__item-box
+                        h3.services__item-title Финансовый отдел
+                        .services__content
+                            ul
+                                li Бухгалтерскиеи аудиторские услуги для малых и средних предприятий и частных лиц
+                                li Полный аудит и проверка финансовой деятельности компании.
+                                li Подготовка бухгалтерской отчетности закрытие всех налоговых вычетов.
+                                li Подготовка финансовой документации предприятия к продаже.
+                                li Проверка всех долговых обязательств перед приобретением действующего бизнеса или производства.
+
+    .about
+        .about__box
+            .about__title
+                h2.title.title_line О нас
+            .about__content
+                p Основной наш ресурс - это опытные сотрудники.
+                p “Мы сплочения команда специалистов которые умеют и хотят зарабатывать деньги не только на своём опыте и своей репутации помогая вам решать вопросы, но и применяя свои знания и используя современные технологии развивая рынок недвижимости”
+
+    .specialists
+        .specialists__box
+            .specialists__title
+                h2.title.title_line Специалисты
+            .specialists__list
+                .specialists__item
+                    img.specialists__image(src="/assets/images/sorbat.jpg")
+                    h3.specialists__name Евгений Сорбат
+                    .specialists__ocupation Адвокат
+                .specialists__item
+                    img.specialists__image(src="/assets/images/pashkova.jpg")
+                    h3.specialists__name Марта Пашкова
+                    .specialists__ocupation Эксперт
+                .specialists__item
+                    img.specialists__image(src="/assets/images/shestova.jpg")
+                    h3.specialists__name Светлана Шестова
+                    .specialists__ocupation Эксперт по недвижимости
+    .footer
+        .footer__box
+            .footer__list
+                .footer__item
+                    h3.footer__title Наш офис
+                    .footer__content
+                        p 117545, Москва, Варшавское шоссе, дом 129, офис 20
+                        p +7 926 753 39 71
+                        p +7 903 127 21 49
+                .footer__item
+                    h3.footer__title Представительство в тайланде
+                    .footer__content
+                        p Pattaya Real Estate Co., LtdShop 1, 445/541-2 Moo 12, Nongprue, Banglamung, Chonburi 20150 Thailand.
+                .footer__item
+                    h3.footer__title Мы в соцсетях
+                    .footer__content
+                        p Политика конфиденциальности
+                        p Пользовательское соглашение
+            .footer__cred © 2018 ИП Пашкова Марта Александровна, ИНН 213000185408, ОГРНИП 318213000017491

@@ -1,0 +1,314 @@
+//Normalize styles
+//@import '../../node_modules/normalize.css/normalize'
+@import './_constants'
+@import './_common'
+@import "./_fonts"
+
+*
+  box-sizing: border-box
+
+body
+  font-family: 'Roboto', Arial, Helvetica, sans-serif
+  margin: 0
+  padding: 0
+  font-weight: 300
+  font-size: $font-size__base
+
+  color: $color__text_primary
+//max-width: $width__desktop
+
+h2
+  display: block
+  font-size: 2em
+  margin-block-start: .67em
+  margin-block-end: .67em
+  margin-inline-start: 0px
+  margin-inline-end: 0px
+  font-weight: bold
+
+h2
+  display: block
+  font-size: 1.5em
+  margin-block-start: .83em
+  margin-block-end: .83em
+  margin-inline-start: 0px
+  margin-inline-end: 0px
+  font-weight: bold
+
+h3
+  display: block
+  font-size: 1.17em
+  margin-block-start: 1em
+  margin-block-end: 1em
+  margin-inline-start: 0px
+  margin-inline-end: 0px
+  font-weight: bold
+
+
+.title
+  @include title(1)
+
+.link1
+  display: inline-block
+  vertical-align: middle
+  white-space: nowrap
+  line-height: 1
+  position: relative
+  text-decoration: none
+  color: $color__link
+  transition: all .2s ease-in
+
+  &__icon
+    transition: inherit
+    margin-left: 2em
+    display: inline-block
+    vertical-align: middle
+    text-align: center
+    background-color: $color__link
+    color: $color__link-invert
+    width: 2em
+    height: 2em
+    line-height: 2.25em
+    border-radius: 50%
+    box-shadow: 0 0 0 0 rgba(252, 252, 252, .75)
+
+  &__text
+    transition: inherit
+    display: inline-block
+    vertical-align: middle
+
+  &:hover
+    color: $color__link_hover
+
+  &:active
+    color: $color__link_active
+
+  &:focus
+    color: $color__link_focus
+
+.logo
+  display: block
+  height: 50px
+  width: auto
+
+.header
+  padding: 2*$gutter 0
+
+  &__box
+    @include box
+    padding: 0 4*$gutter
+    display: flex
+    flex-direction: row
+    flex-basis: calc(100% / 12)
+    align-items: center
+
+  &__logo
+    flex-grow: 3
+
+  &__content
+    flex-grow: 9
+    text-align: right
+    font-weight: 500
+    color: $color__first
+
+.block-main
+  width: 100%
+  padding: 20*$gutter 0
+  color: $color__text-invert_primary
+  box-sizing: border-box
+  @include gradient($color__first, $color__second)
+  position: relative
+
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background: url('/assets/images/re.jpg') 0 0 / cover no-repeat
+    opacity: .1
+    z-index: 1
+
+  &__box
+    @include box
+    padding: 0 4*$gutter
+    position: relative
+    z-index: 2
+
+
+.block-second
+  padding: 10*$gutter
+  position: relative
+
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    height: 514px
+    width: 256px
+    background: url('/assets/images/dots-arrow-left-side.png') 0 0 / contain no-repeat
+    opacity: .5
+
+
+  &__box
+    @include box
+
+  &__title
+    padding: 0 4*$gutter
+
+  &__list
+    display: flex
+    flex-direction: row
+    box-sizing: border-box
+    flex-basis: 25%
+    flex-wrap: wrap
+    @media (min-width: $minWidth_more)
+      flex-wrap: nowrap
+
+  &__item
+    flex-grow: 1
+    padding: 4*$gutter
+
+
+.article
+  height: 100%
+  border-bottom: 3px solid $color__first
+
+.services
+  position: relative
+
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background: url('/assets/images/rounds.png') center / contain no-repeat
+    opacity: .1
+    z-index: 1
+
+  &__box
+    @include box
+
+  &__title
+    padding: 0 4*$gutter
+
+  &__list
+    display: block
+
+  &__item
+    padding: 4*$gutter
+    display: flex
+    flex-direction: row
+    flex-basis: 25%
+    flex-wrap: wrap
+    @media (min-width: $minWidth_more)
+      flex-wrap: nowrap
+
+
+  &__image
+    flex-grow: 1
+    background-size: cover
+    background-position: center
+    height: 100%
+
+  &__item-box
+    display: block
+    flex-grow: 3
+
+.about
+  background: $color__six
+  padding: 6*$gutter 0 10*$gutter 0
+  position: relative
+  overflow: hidden
+
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    bottom: -165px
+    right: -30px
+    height: 514px
+    width: 256px
+    background: url('/assets/images/dots-arrow-right-side.png') 0 0 / contain no-repeat
+    transform: rotate(-135deg)
+    opacity: .5
+
+
+  &__box
+    @include box
+
+  &__title
+    padding: 0 4*$gutter
+
+  &__content
+    padding: 0 4*$gutter
+
+.specialists
+  &__box
+    @include box
+
+  &__title
+    padding: 0 4*$gutter
+
+  &__list
+    display: flex
+    flex-direction: row
+    flex-basis: calc(100% / 3)
+    box-sizing: border-box
+    flex-wrap: wrap
+    @media (min-width: $minWidth_more)
+      flex-wrap: nowrap
+
+  &__item
+    flex-grow: 1
+    padding: 4*$gutter
+
+  &__image
+    max-width: 100%
+    height: auto
+
+.footer
+  background: $color__fifth
+  color: rgba($color__text-invert_primary, .6)
+  font-size: .8em
+  position: relative
+  overflow: hidden
+
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    top: -165px
+    left: -35px
+    height: 514px
+    width: 256px
+    background: url('/assets/images/dots-arrow-left-side-l.png') 0 0 / contain no-repeat
+    transform: rotate(-135deg)
+    opacity: .3
+
+  &__box
+    @include box
+
+  &__list
+    display: flex
+    flex-direction: row
+    flex-basis: calc(100% / 3)
+    box-sizing: border-box
+    flex-wrap: wrap
+    @media (min-width: $minWidth_more)
+      flex-wrap: nowrap
+
+  &__item
+    flex-grow: 1
+    padding: 4*$gutter
+
+  &__cred
+    text-align: center
+    padding: 4*$gutter
