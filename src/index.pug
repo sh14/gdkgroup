@@ -17,23 +17,24 @@ block content
         .header__box
             .header__logo
                 img.logo(src="/gdkgroup/assets/images/logo.png")
-            .header__content +7 903 123-45-67
-    .block-main
+            .header__content
+                a.phone(href="tel:+79267533971") +7 926 753 39 71
+    .block-main(id="block-main")
         .block-main__box
             h1.title.title_line.title_light Технология продаж, которую используют во всем мире, теперь в России
             p Это то, что меняет рынок недвижимости.
             p А ты готов к переменам?
             +link({
-              __class: "link1",
-              __mixin: "",
+              __class: "link",
+              __mixin: "invert",
               text: "Читать далее",
-              link: "https://yandex.ru/",
+              link: "#block-second",
               name: "#arrow-right",
               width: '1em',
               height: '1em',
             })
 
-    .block-second
+    .block-second(id="block-second")
         .block-second__box
             h2.block-second__title Наша технология применима во всех сферах недвижимости и позволяет:
             .block-second__list
@@ -54,7 +55,7 @@ block content
                         h3.article__title Выгода
                         .article__content Продать объект выгоднее на реальных 3-5% от стоимости, что покроет расходы на риэлтора и рекламу.
 
-    .services
+    .services(id="services")
         .services__box
             .services__title
                 h2.title.title_line Услуги
@@ -80,7 +81,72 @@ block content
                                 li Подготовка финансовой документации предприятия к продаже.
                                 li Проверка всех долговых обязательств перед приобретением действующего бизнеса или производства.
 
-    .about
+    .statistics(id="statistics")
+        .statistics__box
+            .statistics__title
+                h2.title.title_line Статистика
+            .statistics__list
+                .statistics__item
+                    .statistics__thumbnail(style="background-image:url(/gdkgroup/assets/images/moscow.jpeg)")
+                    h3.statistics__item-title Москва
+                    .statistics__content
+                        .line
+                            .line__key Однокомнатные квартиры
+                            .line__delimiter
+                            .line__value 158
+                        .line
+                            .line__key 2-х комнатные квартиры
+                            .line__delimiter
+                            .line__value 77
+                        .line
+                            .line__key 3-х комнатные квартиры
+                            .line__delimiter
+                            .line__value 64
+                        .line
+                            .line__key 4-е и более комнат
+                            .line__delimiter
+                            .line__value 12
+                .statistics__item
+                    .statistics__thumbnail(style="background-image:url(/gdkgroup/assets/images/oblast.jpeg)")
+                    h3.statistics__item-title Область
+                    .statistics__content
+                        .line
+                            .line__key Квартиры
+                            .line__delimiter
+                            .line__value 138
+                        .line
+                            .line__key Дома
+                            .line__delimiter
+                            .line__value 154
+                        .line
+                            .line__key Таунхаусы
+                            .line__delimiter
+                            .line__value 52
+                        .line
+                            .line__key Участки
+                            .line__delimiter
+                            .line__value 23
+                .statistics__item
+                    .statistics__thumbnail(style="background-image:url(/gdkgroup/assets/images/region.jpeg)")
+                    h3.statistics__item-title Регионы
+                    .statistics__content
+                        .line
+                            .line__key Квартиры
+                            .line__delimiter
+                            .line__value 76
+                        .line
+                            .line__key Дома
+                            .line__delimiter
+                            .line__value 134
+                        .line
+                            .line__key Таунхаусы
+                            .line__delimiter
+                            .line__value 93
+                        .line
+                            .line__key Участки
+                            .line__delimiter
+                            .line__value 72
+    .about(id="about")
         .about__box
             .about__title
                 h2.title.title_line О нас
@@ -88,7 +154,7 @@ block content
                 p Основной наш ресурс - это опытные сотрудники.
                 p “Мы сплочения команда специалистов которые умеют и хотят зарабатывать деньги не только на своём опыте и своей репутации помогая вам решать вопросы, но и применяя свои знания и используя современные технологии развивая рынок недвижимости”
 
-    .specialists
+    .specialists(id="specialists")
         .specialists__box
             .specialists__title
                 h2.title.title_line Специалисты
@@ -105,15 +171,23 @@ block content
                     img.specialists__image(src="/gdkgroup/assets/images/shestova.jpg")
                     h3.specialists__name Светлана Шестова
                     .specialists__ocupation Эксперт по недвижимости
-    .footer
+    .contactus(id="contactus")
+        .contactus__box
+            form.contactus__form
+                label.contactus__label(for="")
+                input.contactus__control(type="text")
+    .footer(id="footer")
         .footer__box
             .footer__list
                 .footer__item
                     h3.footer__title Наш офис
                     .footer__content
-                        p 117545, Москва, Варшавское шоссе, дом 129, офис 20
-                        p +7 926 753 39 71
-                        p +7 903 127 21 49
+                        p
+                            a.link.link_invert(href="https://goo.gl/maps/yZDnxbgiFU3KLouN7" target="_blank") 117545, Москва, Варшавское шоссе, дом 129, офис 20
+                        p
+                            a.link.link_invert(href="tel:+79267533971") +7 926 753 39 71
+                        p
+                            a.link.link_invert(href="tel:+79031272149") +7 903 127 21 49
                 .footer__item
                     h3.footer__title Представительство в тайланде
                     .footer__content
@@ -121,6 +195,15 @@ block content
                 .footer__item
                     h3.footer__title Мы в соцсетях
                     .footer__content
-                        p Политика конфиденциальности
-                        p Пользовательское соглашение
+                        .socials
+                            a.socials__item(href="https://www.youtube.com/channel/UCTihp1qCfIJVSctsBTgeRXw" target="_blank")
+                                +icon({ name: 'youtube' })
+                            a.socials__item(href="https://vk.com/club49354025" target="_blank")
+                                +icon({ name: 'vk' })
+                            a.socials__item(href="https://www.instagram.com/gdkgroup.ru/" target="_blank")
+                                +icon({ name: 'ig' })
+                        p
+                            a.link.link_invert(href="#") Политика конфиденциальности
+                        p
+                            a.link.link_invert(href="#") Пользовательское соглашение
             .footer__cred © 2018 ИП Пашкова Марта Александровна, ИНН 213000185408, ОГРНИП 318213000017491
