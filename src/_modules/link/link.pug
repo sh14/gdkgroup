@@ -10,11 +10,11 @@ mixin link(spec)
 
     if spec.__mixin
         a(href=spec.link class=spec.__class + ' ' + spec.__class + spec.__mixin)&attributes(attributes)
-            div(class=spec.__class + '__text' + ' ' + spec.__class + '__text' + spec.__mixin)=spec.text
-            div(class=spec.__class + '__icon' + ' ' + spec.__class + '__icon' + spec.__mixin)
+            span(class=spec.__class + '__text' + ' ' + spec.__class + '__text' + spec.__mixin)=spec.text
+            span(class=spec.__class + '__icon' + ' ' + spec.__class + '__icon' + spec.__mixin)
                 +icon({ name: spec.name, width: spec.width, height: spec.height, })
     else
         a(href=spec.link class=spec.__class + spec.__mixin)&attributes(attributes)
-            div(class=spec.__class + '__text' + spec.__mixin)=spec.text
-            div(class=spec.__class + '__icon' + spec.__mixin)
+            span(class=spec.__class + '__text' + spec.__mixin)=spec.text
+            span(class=spec.__class + '__icon' + spec.__mixin)
                 +icon({ name: spec.name, width: spec.width, height: spec.height, })
