@@ -17,6 +17,9 @@ body
   color: $color__text_primary
 //max-width: $width__desktop
 
+a
+  color: $color__link
+
 h2
   display: block
   font-size: 2em
@@ -48,43 +51,8 @@ h3
 .title
   @include title(1)
 
-.link1
-  display: inline-block
-  vertical-align: middle
-  white-space: nowrap
-  line-height: 1
-  position: relative
-  text-decoration: none
-  color: $color__link
-  transition: all .2s ease-in
-
-  &__icon
-    transition: inherit
-    margin-left: 2em
-    display: inline-block
-    vertical-align: middle
-    text-align: center
-    background-color: $color__link
-    color: $color__link-invert
-    width: 2em
-    height: 2em
-    line-height: 2.25em
-    border-radius: 50%
-    box-shadow: 0 0 0 0 rgba(252, 252, 252, .75)
-
-  &__text
-    transition: inherit
-    display: inline-block
-    vertical-align: middle
-
-  &:hover
-    color: $color__link_hover
-
-  &:active
-    color: $color__link_active
-
-  &:focus
-    color: $color__link_focus
+.link
+  @include link
 
 .logo
   display: block
@@ -108,8 +76,11 @@ h3
   &__content
     flex-grow: 9
     text-align: right
-    font-weight: 500
-    color: $color__first
+
+.phone
+  text-decoration: none
+  font-weight: 500
+  color: $color__first
 
 .block-main
   width: 100%
@@ -139,6 +110,7 @@ h3
 
 
 .block-second
+  @include flexed(1, 2, 4, 1)
   padding: 10*$gutter
   position: relative
 
@@ -160,25 +132,13 @@ h3
   &__title
     padding: 0 4*$gutter
 
-  &__list
-    display: flex
-    flex-direction: row
-    box-sizing: border-box
-    flex-basis: 25%
-    flex-wrap: wrap
-    @media (min-width: $minWidth_more)
-      flex-wrap: nowrap
-
-  &__item
-    flex-grow: 1
-    padding: 4*$gutter
-
 
 .article
   height: 100%
   border-bottom: 3px solid $color__first
 
 .services
+  @include flexed(1, 1, 1, 1)
   position: relative
 
   &:before
@@ -189,7 +149,7 @@ h3
     left: 0
     height: 100%
     width: 100%
-    background: url('/assets/images/rounds.png') center / contain no-repeat
+    background: url('/gdkgroup/assets/images/rounds.png') center / contain no-repeat
     opacity: .1
     z-index: 1
 
@@ -198,18 +158,6 @@ h3
 
   &__title
     padding: 0 4*$gutter
-
-  &__list
-    display: block
-
-  &__item
-    padding: 4*$gutter
-    display: flex
-    flex-direction: row
-    flex-basis: 25%
-    flex-wrap: wrap
-    @media (min-width: $minWidth_more)
-      flex-wrap: nowrap
 
 
   &__image
@@ -228,6 +176,7 @@ h3
   position: relative
   overflow: hidden
 
+
   &:before
     content: ''
     display: block
@@ -236,9 +185,20 @@ h3
     right: -30px
     height: 514px
     width: 256px
-    background: url('/assets/images/dots-arrow-right-side.png') 0 0 / contain no-repeat
+    background: url('/gdkgroup/assets/images/dots-arrow-right-side.png') 0 0 / contain no-repeat
     transform: rotate(-135deg)
     opacity: .5
+
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    bottom: 0
+    right: 0
+    height: 100%
+    width: 100%
+    background: url('/gdkgroup/assets/images/office.jpg') center / cover no-repeat
+    opacity: .1
 
 
   &__box
@@ -251,30 +211,24 @@ h3
     padding: 0 4*$gutter
 
 .specialists
+  @include flexed(1, 2, 3, 0)
+  padding: 0 0 10*$gutter 0
+
   &__box
     @include box
 
   &__title
     padding: 0 4*$gutter
 
-  &__list
-    display: flex
-    flex-direction: row
-    flex-basis: calc(100% / 3)
-    box-sizing: border-box
-    flex-wrap: wrap
-    @media (min-width: $minWidth_more)
-      flex-wrap: nowrap
-
-  &__item
-    flex-grow: 1
-    padding: 4*$gutter
-
   &__image
     max-width: 100%
     height: auto
+    margin: auto
+    display: block
+
 
 .footer
+  @include flexed(1, 2, 3, 1)
   background: $color__fifth
   color: rgba($color__text-invert_primary, .6)
   font-size: .8em
@@ -289,26 +243,50 @@ h3
     left: -35px
     height: 514px
     width: 256px
-    background: url('/assets/images/dots-arrow-left-side-l.png') 0 0 / contain no-repeat
+    background: url('/gdkgroup/assets/images/dots-arrow-left-side-l.png') 0 0 / contain no-repeat
     transform: rotate(-135deg)
     opacity: .3
+    z-index: 1
 
   &__box
     @include box
+    position: relative
+    z-index: 2
 
-  &__list
-    display: flex
-    flex-direction: row
-    flex-basis: calc(100% / 3)
-    box-sizing: border-box
-    flex-wrap: wrap
-    @media (min-width: $minWidth_more)
-      flex-wrap: nowrap
-
-  &__item
-    flex-grow: 1
-    padding: 4*$gutter
 
   &__cred
     text-align: center
     padding: 4*$gutter
+
+
+.statistics
+  @include flexed(1, 2, 3, 1)
+  padding: 0 0 10*$gutter 0
+
+  &__box
+    @include box
+
+  &__thumbnail
+    background-position: center
+    background-size: cover
+    padding-top: 75%
+    width: 100%
+
+.line
+  display: flex
+  flex-direction: row
+  flex-basis: calc(100% / 12)
+
+  &__key
+    flex-grow: 0
+
+  &__delimiter
+    flex-grow: 1
+    border-bottom: 1px dotted $color__second
+
+  &__value
+    flex-grow: 0
+    text-align: right
+
+.contactus
+  display: none

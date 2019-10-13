@@ -194,3 +194,77 @@
 @mixin box
   max-width: $width__desktop
   margin: auto
+
+
+@mixin link
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  text-decoration: none
+  color: $color__link
+  transition: all .2s ease-in
+
+  &_more
+    white-space: nowrap
+    line-height: 1
+  &_invert
+    color: $color__link-invert
+
+
+  &:hover
+    color: $color__link_hover
+  &:active
+    color: $color__link_active
+  &:focus
+    color: $color__link_focus
+
+
+  &__block
+    transition: inherit
+  &__text
+    transition: inherit
+    display: inline-block
+    vertical-align: middle
+  &__icon
+    transition: inherit
+    //transition-delay: 300ms
+    margin-left: 2em
+    display: inline-block
+    vertical-align: middle
+    text-align: center
+    background-color: $color__link
+    color: $color__link-invert
+    width: 2em
+    height: 2em
+    line-height: 2.25em
+    border-radius: 50%
+    box-shadow: 0 0 0 0 rgba(252, 252, 252, .75)
+
+    &_invert
+      background-color: $color__link-invert
+      color: $color__link
+
+
+  &:hover &__icon
+    background-color: $color__link_hover
+  &:active &__icon
+    background-color: $color__link_active
+  &:focus &__icon
+    background-color: $color__link_focus
+
+
+@mixin flexed($mobile,$tablet,$desktop,$grow)
+  &__list
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+
+  &__item
+    padding: 4*$gutter
+    flex-grow: $grow
+    flex-shrink: 1
+    flex-basis: calc(100% / #{$mobile})
+    @media (min-width: $minWidth_more)
+      flex-basis: calc(100% / #{$tablet})
+    @media (min-width: $width__tablet_more)
+      flex-basis: calc(100% / #{$desktop})
