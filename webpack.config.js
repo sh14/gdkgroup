@@ -245,7 +245,7 @@ module.exports = smp.wrap({
   output: {
     filename: `${assetPath}/scripts/main.js`,
     path: path.resolve(__dirname, 'docs'),
-    publicPath: "/gdkgroup"
+    publicPath: "/"
   },
   module: {
     rules: moduleRules
@@ -280,7 +280,7 @@ module.exports = smp.wrap({
   devServer: {
     contentBase: path.resolve(__dirname, 'docs'),
     watchContentBase: true,
-    publicPath: '/gdkgroup',
+    publicPath: '/',
     hot:false,
     inline: true,
     port: 3000
