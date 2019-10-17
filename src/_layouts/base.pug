@@ -10,6 +10,8 @@ block consts
     - var url = 'https://'+domain+'/'
     - var siteTitle = '- GDKEstate'
     - var language = 'ru'
+    - var hash = new Date().getTime().toString('16')
+
 
 //- Custom Configuration
 block config
@@ -42,11 +44,11 @@ head
     meta(property="og:type"               content="article" )
     meta(property="og:title"              content=title )
     meta(property="og:description"        content=description )
-    meta(property="og:image"              content=url+'assets/images/share-thumb.png')
+    meta(property="og:image"              content=url + 'assets/images/share-thumb.png')
     meta(name="yandex-verification" content="684fee586689a312")
 
     block stylesheets
-        link(rel='stylesheet', href= '/assets/styles/main.css')
+        link(rel='stylesheet', href=`/assets/styles/main.css?${hash}`)
     +metrics
 body
     <!--[if lt IE 9]>
@@ -58,6 +60,6 @@ body
 
         +footer
     block scripts
-        script(src= '/assets/scripts/main.js')
+        script(src= `/assets/scripts/main.js?${hash}`)
 
 </html>
