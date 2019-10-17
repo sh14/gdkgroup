@@ -57,7 +57,6 @@ head
 
     block stylesheets
         link(rel='stylesheet', href=`/assets/styles/main.css?${hash}`)
-    +metrics
 body
     <!--[if lt IE 9]>
     <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
@@ -69,5 +68,5 @@ body
         +footer
     block scripts
         script(src= `/assets/scripts/main.js?${hash}`)
-
+    +metrics
 </html>
