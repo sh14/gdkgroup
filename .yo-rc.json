@@ -4,7 +4,8 @@
     "author": "Isaenko Alex",
     "jsPreprocessor": "ES6(using babel)",
     "pages": [
-      "contact"
+      "contact",
+      "policy"
     ]
   }
 }

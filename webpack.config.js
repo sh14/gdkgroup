@@ -256,7 +256,8 @@ module.exports = smp.wrap({
     new CopyWebpackPlugin([
       {from:'src/_images',to:`${assetPath}/images`},
       // {from:'src/_fonts',to:`${assetPath}/fonts`},
-      {from:'src/_api',to:'api'}
+      {from:'src/_api',to:'api'},
+      {from:'src/php',to:'php'},
     ]),
    
     // new webpack.ProvidePlugin({
@@ -273,7 +274,7 @@ module.exports = smp.wrap({
     // определение css файлов, которые будут минимизированны
     new PurgecssPlugin({
       paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-      whitelistPatterns: [/link_.*/]
+      whitelistPatterns: [/link_.*/,/header_.*/]
     }),
 
   ].concat(htmlPlugins, buildPlugins),
