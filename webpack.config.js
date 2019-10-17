@@ -258,6 +258,7 @@ module.exports = smp.wrap({
       // {from:'src/_fonts',to:`${assetPath}/fonts`},
       {from:'src/_api',to:'api'},
       {from:'src/php',to:'php'},
+      {from:'CNAME',to:'CNAME'},
     ]),
    
     // new webpack.ProvidePlugin({

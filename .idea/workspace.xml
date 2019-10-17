@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7ac89fce-8d56-4f7a-8044-f164dfb3a4ed" name="Default Changelist" comment="build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_layouts/base.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/_layouts/base.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/policy/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/policy/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/contact/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/contact/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/policy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/policy/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,28 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_modules/header/header.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_modules/footer/footer.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -51,10 +34,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CNAME">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="276" column="43" selection-start-line="276" selection-start-column="43" selection-end-line="276" selection-end-column="43" />
+            <state relative-caret-position="107">
+              <caret line="192" column="32" selection-start-line="192" selection-start-column="32" selection-end-line="192" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -89,20 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_layouts/base.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="45" column="63" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_modules/metrics/metrics.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="224">
+              <caret line="53" column="89" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -119,16 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tel</find>
-      <find>link</find>
-      <find>@media (min-width: $minWidth_more)</find>
-      <find>@include flexed(1, 2, 3)</find>
-      <find>.spe</find>
-      <find>.stat</find>
-      <find>gdkgroup/</find>
-      <find>dist</find>
-      <find>vk</find>
-      <find>CleanWebpackPlugin</find>
       <find>/gdkgroup</find>
       <find>.socials</find>
       <find>docs</find>
@@ -143,12 +134,22 @@
       <find>canonical</find>
       <find>&lt;p&gt;</find>
       <find>gdkgroup.ru</find>
-      <find>+icon</find>
       <find>lin</find>
       <find>242d36</find>
       <find>logo</find>
-      <find>domain</find>
       <find>&lt;/strong&gt;</find>
+      <find>contenthash</find>
+      <find>loader: MiniCssExtra</find>
+      <find>.js</find>
+      <find>.css</find>
+      <find>hash</find>
+      <find>prod</find>
+      <find>+icon</find>
+      <find>has</find>
+      <find>ss</find>
+      <find>side</find>
+      <find>?[hash]</find>
+      <find>domain</find>
     </findStrings>
     <replaceStrings>
       <replace>:</replace>
@@ -204,11 +205,12 @@
         <option value="$PROJECT_DIR$/src/_modules/footer/footer.pug" />
         <option value="$PROJECT_DIR$/src/_modules/metrics/metrics.pug" />
         <option value="$PROJECT_DIR$/src/index.pug" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/_modules/header/header.pug" />
         <option value="$PROJECT_DIR$/src/_styles/main.sass" />
         <option value="$PROJECT_DIR$/src/_scripts/main.js" />
         <option value="$PROJECT_DIR$/src/policy/index.pug" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/_layouts/base.pug" />
       </list>
     </option>
@@ -234,19 +236,12 @@
             <path>
               <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
               <item name="generator-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
               <item name="generator-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="generator-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
@@ -258,52 +253,7 @@
               <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
               <item name="generator-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="generator-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="generator-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="generator-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="icon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="generator-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="metrics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="generator-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="generator-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="_styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gdkgroup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="generator-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="policy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -315,7 +265,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/dist/index.html" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/_images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/_images/fav" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -328,6 +278,7 @@
       <recent name="$PROJECT_DIR$/src/_images/icons" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/_images/fav" />
       <recent name="$PROJECT_DIR$/src/_images" />
       <recent name="$PROJECT_DIR$/src/_images/icons" />
       <recent name="$PROJECT_DIR$/src/_modules" />
@@ -393,7 +344,7 @@
       <workItem from="1570460090761" duration="223000" />
       <workItem from="1570894504418" duration="491000" />
       <workItem from="1570901704192" duration="20153000" />
-      <workItem from="1571101210830" duration="13828000" />
+      <workItem from="1571101210830" duration="19153000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1570912805388</created>
@@ -549,23 +500,64 @@
       <option name="project" value="LOCAL" />
       <updated>1571305272132</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="yandex meta tag">
+      <created>1571321830640</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1571321830640</updated>
+    </task>
+    <task id="LOCAL-00024" summary="html corrections">
+      <created>1571321852555</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1571321852555</updated>
+    </task>
+    <task id="LOCAL-00025" summary="build">
+      <created>1571321896079</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1571321896079</updated>
+    </task>
+    <task id="LOCAL-00026" summary="hash on a source files">
+      <created>1571326818222</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1571326818222</updated>
+    </task>
+    <task id="LOCAL-00027" summary="favicons added">
+      <created>1571328096871</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1571328096872</updated>
+    </task>
+    <task id="LOCAL-00028" summary="build">
+      <created>1571328143054</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1571328143054</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73341000" />
+    <option name="totallyTimeSpent" value="78666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.69320846" visible="true" weight="0.14306152" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.69320846" visible="true" weight="0.14306152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.30679157" side_tool="true" visible="true" weight="0.14306152" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.45605096" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.45605096" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -575,7 +567,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.30722892" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49928468" weight="0.3057325" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49928468" weight="0.49426752" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -606,26 +598,16 @@
     <MESSAGE value="yandex metrics added" />
     <MESSAGE value="policy page added" />
     <MESSAGE value="php directory added" />
+    <MESSAGE value="yandex meta tag" />
+    <MESSAGE value="html corrections" />
+    <MESSAGE value="hash on a source files" />
+    <MESSAGE value="favicons added" />
     <MESSAGE value="build" />
     <option name="LAST_COMMIT_MESSAGE" value="build" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/_styles/bemto.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_styles/_fonts.scss">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="5" selection-end-line="10" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_modules/button/button.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -673,39 +655,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_images/accounting.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/CNAME">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CNAME">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="2" column="575" selection-start-line="2" selection-start-column="575" selection-end-line="2" selection-end-column="575" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/php/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -847,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="276" column="43" selection-start-line="276" selection-start-column="43" selection-end-line="276" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_modules/header/header.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -875,6 +817,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/policy/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1765">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/policy/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/_scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -885,17 +844,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/policy/index.pug">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1765">
-          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        <state relative-caret-position="135">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="192" column="32" selection-start-line="192" selection-start-column="32" selection-end-line="192" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_layouts/base.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="45" column="63" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
+        <state relative-caret-position="224">
+          <caret line="53" column="89" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
