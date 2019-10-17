@@ -1,9 +1,6 @@
 extends _layouts/base
 
 
-include ./_modules/button/button
-include ./_modules/icon/icon
-include ./_modules/link/link
 
 
 block config 
@@ -13,12 +10,6 @@ block config
     - var description = 'Главная страница сайта'
 
 block content
-    .header
-        .header__box
-            .header__logo
-                img.logo(src="/assets/images/logo.png")
-            .header__content
-                a.phone(href="tel:+79267533971") +7 926 753 39 71
     .block-main(id="block-main")
         .block-main__box
             h1.title.title_line.title_light Технология продаж, которую используют во всем мире, теперь в России
@@ -176,34 +167,3 @@ block content
             form.contactus__form
                 label.contactus__label(for="")
                 input.contactus__control(type="text")
-    .footer(id="footer")
-        .footer__box
-            .footer__list
-                .footer__item
-                    h3.footer__title Наш офис
-                    .footer__content
-                        p
-                            a.link.link_invert(href="https://goo.gl/maps/yZDnxbgiFU3KLouN7" target="_blank") 117545, Москва, Варшавское шоссе, дом 129, офис 20
-                        p
-                            a.link.link_invert(href="tel:+79267533971") +7 926 753 39 71
-                        p
-                            a.link.link_invert(href="tel:+79031272149") +7 903 127 21 49
-                .footer__item
-                    h3.footer__title Представительство в тайланде
-                    .footer__content
-                        p Pattaya Real Estate Co., LtdShop 1, 445/541-2 Moo 12, Nongprue, Banglamung, Chonburi 20150 Thailand.
-                .footer__item
-                    h3.footer__title Мы в соцсетях
-                    .footer__content
-                        .socials
-                            a.socials__item(href="https://www.youtube.com/channel/UCTihp1qCfIJVSctsBTgeRXw" target="_blank")
-                                +icon({ name: 'youtube' })
-                            a.socials__item(href="https://vk.com/club49354025" target="_blank")
-                                +icon({ name: 'vk' })
-                            a.socials__item(href="https://www.instagram.com/gdkgroup.ru/" target="_blank")
-                                +icon({ name: 'ig' })
-                        p
-                            a.link.link_invert(href="#") Политика конфиденциальности
-                        p
-                            a.link.link_invert(href="#") Пользовательское соглашение
-            .footer__cred © 2018 ИП Пашкова Марта Александровна, ИНН 213000185408, ОГРНИП 318213000017491

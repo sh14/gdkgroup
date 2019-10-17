@@ -59,6 +59,10 @@ h3
   height: 50px
   width: auto
 
+.page
+  &__box
+    @include box
+
 .header
   padding: 2*$gutter 0
 
@@ -72,6 +76,19 @@ h3
 
   &__logo
     flex-grow: 3
+    display: flex
+    align-items: center
+    text-decoration: none
+    color: $color__text_primary
+
+  &__name
+    font-weight: bold
+    letter-spacing: 1px
+    font-size: 1.2em
+    margin-top: -1px
+
+  &__zone
+    font-weight: 300
 
   &__content
     flex-grow: 9
@@ -111,7 +128,7 @@ h3
 
 .block-second
   @include flexed(1, 2, 4, 1)
-  padding: 10*$gutter
+  padding: 10*$gutter 0
   position: relative
 
   &:before
@@ -293,3 +310,17 @@ h3
 
 .contactus
   display: none
+
+
+.socials
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+  &__item
+    color: $color__text-invert_primary
+    opacity: .7
+
+    &:hover
+      opacity: 1
+
