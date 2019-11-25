@@ -114,10 +114,15 @@ function generateModRules(envMode) {
       use: "happypack/loader?id=js"
     },
     {
-      test: /\.(sa|sc|c)ss$/,
+      test: /\.(sa|sc|c)ss$/i,
       use: [
         MiniCssExtractPlugin.loader,
-        'css-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true,
+          },
+        },
         'postcss-loader',
         'fast-sass-loader',
       ],
@@ -255,7 +260,7 @@ module.exports = smp.wrap({
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       {from:'src/_images',to:`${assetPath}/images`},
-      // {from:'src/_fonts',to:`${assetPath}/fonts`},
+      {from:'src/_fonts',to:`${assetPath}/fonts`},
       {from:'src/_api',to:'api'},
       {from:'src/php',to:'php'},
       {from:'CNAME',to:'CNAME',toType: 'file',},
@@ -269,13 +274,13 @@ module.exports = smp.wrap({
     // }),
 
     new MiniCssExtractPlugin({
-      filename: `${assetPath}/styles/main.css?[contenthash]`
+      filename: `${assetPath}/styles/[name].css`
     }),
 
     // определение css файлов, которые будут минимизированны
     new PurgecssPlugin({
       paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-      whitelistPatterns: [/link_.*/,/header_.*/]
+      whitelistPatterns: [/link_.*/,/header_.*/,/piramida_.*/]
     }),
 
   ].concat(htmlPlugins, buildPlugins),

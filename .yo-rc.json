@@ -5,7 +5,8 @@
     "jsPreprocessor": "ES6(using babel)",
     "pages": [
       "contact",
-      "policy"
+      "policy",
+      "pyr"
     ]
   }
 }
