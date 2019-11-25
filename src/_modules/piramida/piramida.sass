@@ -1,0 +1,138 @@
+//piramida styles
+
+.piramida
+  $part: 30px
+  $partTop: $part
+  $top: 0
+  padding: 15*$gutter 0
+  &__box
+    @include box
+    position: relative
+
+  &__item
+    width: 50%
+    display: table
+    position: relative
+
+    &:before, &:last-child:after
+      display: block
+      content: ''
+      position: absolute
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+      width: 200%
+      height: 120%
+      //padding-top: 30%
+      left: 0%
+      bottom: 0%
+    &:last-child:after
+      background-image: url(/assets/images/icons/piramida-part3.svg)
+      left: auto
+      right: 0%
+      z-index: -1
+      height: 65%
+      bottom: -7px
+
+    &_right
+      margin: 0 0 0 auto
+
+      &:before
+        left: auto
+        right: 0%
+
+    &_1
+      height: $part
+      z-index: 100
+
+      &:before
+        //height: ($part + $part / 2)*2
+        height: 265%
+        background-image: url(/assets/images/icons/piramida.svg)
+
+    @for $i from 2 through 10
+      &_#{$i}
+        $part:  $part * 1.2
+        //height: $part * ($i * 2 - 2) / 2
+        height: $part
+        z-index: calc(100 - #{$i})
+
+        &:before
+          //height: 200%
+          background-image: url(/assets/images/icons/piramida-part2.svg)
+
+    //&_2
+    //  height: $part
+    //  &:before
+    //    height: 50px
+    //&_3
+    //  height: 75px
+    //  &:before
+    //    height: 75px
+    //&_4
+    //  height: 120px
+    //  &:before
+    //    height: 120px
+    //&_5
+    //  height: 150px
+    //  &:before
+    //    height: 175px
+    //&_6
+    //  height: 210px
+    //  &:before
+    //    height: 250px
+
+  &__title
+    display: flex
+    align-items: center
+    z-index: 100
+    position: relative
+
+    &_right
+      flex-direction: row-reverse
+      text-align: right
+    $part: $partTop
+    @for $i from 2 through 10
+      &_#{$i}
+        $part:  $part * 1.2
+        $partTop:  $part / 2
+        //$top: ($top + $part * ($i * 2 - 2) / 2) / 3
+        //$top: ($top + $partTop * ($i * 2 - 2) / 2) / 3
+        //$top: $part / 2
+        top: $partTop
+        //top: 50%
+  &__caption
+    flex-grow: 0
+    margin: 0
+    font-size: 0.7em
+    text-transform: uppercase
+    //font-weight: 400
+  //&_right
+
+  &__line
+    margin: 0 0 0 8*$gutter
+    position: relative
+    height: 1px
+    flex-grow: 1
+    background: #aaa
+
+    &:before
+      position: absolute
+      right: -4px
+      top: -3px
+      display: block
+      content: ''
+      width: 7px
+      height: 7px
+      border-radius: 50%
+      background: inherit
+
+    &_right
+      margin: 0 8*$gutter 0 0
+      &:before
+        right: auto
+        left: -4px
+
+  &__text
+    &_right
+      text-align: right

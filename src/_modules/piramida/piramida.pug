@@ -1,0 +1,20 @@
+mixin piramida(spec)
+    - site = htmlWebpackPlugin.options
+    - spec = spec || {}
+    - spec.__class = spec.__class || ''
+
+    .piramida(class=spec.__class)&attributes(attributes)
+        .piramida__box
+            each item, index in site.data.piramida
+                if 0 === index % 2
+                    .piramida__item(class='piramida__item_'+(index+1))
+                        .piramida__title(class='piramida__title_'+(index+1))
+                            h3.piramida__caption #{item.title}
+                            .piramida__line
+                        .piramida__text #{item.text}
+                else
+                    .piramida__item.piramida__item_right(class='piramida__item_'+(index+1))
+                        .piramida__title.piramida__title_right(class='piramida__title_'+(index+1))
+                            h3.piramida__caption.piramida__caption_right #{item.title}
+                            .piramida__line.piramida__line_right
+                        .piramida__text.piramida__text_right #{item.text}
