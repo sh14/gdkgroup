@@ -1,0 +1,41 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="266px" height="102px">
+    <defs>
+        <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="0.25" />
+            <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="PSgrad_1" x1="0%" x2="100%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="rgb(0,0,0)" stop-opacity="0.1" />
+            <stop offset="100%" stop-color="rgb(0,0,0)" stop-opacity="0" />
+        </linearGradient>
+        <filter id="Filter_0">
+            <feOffset in="SourceAlpha" dx="0" dy="3" />
+            <feGaussianBlur result="blurOut" stdDeviation="4.243" />
+            <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+            <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+            <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+            <feComponentTransfer><feFuncA type="linear" slope="0.35"/></feComponentTransfer>
+            <feBlend mode="multiply" in2="SourceGraphic" />
+        </filter>
+
+    </defs>
+    <path fill-rule="evenodd"  fill="rgb(0, 85, 147)"
+          d="M9.038,25.091 L130.940,5.325 L256.962,24.898 L133.228,51.677 L9.038,25.091 Z"/>
+    <path fill="url(#PSgrad_0)"
+          d="M9.038,25.091 L130.940,5.325 L256.962,24.898 L133.228,51.677 L9.038,25.091 Z"/>
+    <path fill-rule="evenodd"  fill="rgb(238, 238, 238)"
+          d="M8.961,24.666 L133.031,51.000 L133.031,102.000 L0.000,70.000 L8.961,24.666 Z"/>
+    <path fill="url(#PSgrad_1)"
+          d="M8.961,24.666 L133.031,51.000 L133.031,102.000 L0.000,70.000 L8.961,24.666 Z"/>
+    <path fill-rule="evenodd"  fill="rgb(238, 238, 238)"
+          d="M257.041,25.009 L133.000,51.227 L133.000,102.000 L266.000,70.142 L257.041,25.009 Z"/>
+    <path fill="url(#PSgrad_1)"
+          d="M257.041,25.009 L133.000,51.227 L133.000,102.000 L266.000,70.142 L257.041,25.009 Z"/>
+    <g filter="url(#Filter_0)">
+        <path fill-rule="evenodd"  fill-opacity="0" fill="rgb(0, 85, 147)"
+              d="M9.038,25.091 L130.940,5.325 L256.962,24.898 L133.228,51.677 L9.038,25.091 Z"/>
+    </g>
+</svg>
